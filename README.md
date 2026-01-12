@@ -1,37 +1,57 @@
 🗺️ DQ9 Treasure Picker
 
-DQ9 Treasure Picker est un petit outil PC conçu pour Dragon Quest IX – Les Sentinelles du Firmament, permettant de visualiser et sélectionner facilement les cartes au trésor du jeu à partir d’une bibliothèque d’images locales.
+DQ9 Treasure Picker est un outil PC dédié à Dragon Quest IX – Les Sentinelles du Firmament, pensé pour aider les joueurs à identifier et parcourir les cartes au trésor du jeu.
 
-Ce logiciel a été développé pour simplifier la recherche et l’identification des cartes, sans avoir à parcourir manuellement des dossiers ou des listes interminables.
+Le projet se compose actuellement de deux fonctionnalités distinctes :
+un picker manuel fonctionnel et un système de détection automatique expérimental.
 
 ✨ Fonctionnalités
+🖱️ 1. Treasure Picker (fonctionnel)
 
-📁 Chargement automatique des images de cartes depuis un dossier local
-🖼️ Aperçu clair et lisible des cartes sélectionnées
-🖱️ Navigation simple à la souris
-🔍 Affichage rapide sans compression ni altération des images
-🧠 Interface volontairement simple, légère et efficace
-🎯 Objectif
+Le picker permet de parcourir manuellement les cartes au trésor, classées par zones / régions, à partir d’images locales.
 
-L’objectif du projet est de proposer un outil pratique pour les joueurs et collectionneurs de Dragon Quest IX, facilitant la gestion visuelle des cartes au trésor, que ce soit pour :
+📁 Navigation par dossiers (zones)
+🖼️ Aperçu clair des cartes
+🖱️ Sélection simple à la souris
+⚡ Rapide, léger et hors ligne
+👉 Idéal pour consulter, comparer et identifier des cartes sans effort.
 
-le theorycraft,
-l’archivage,
-ou simplement le confort d’utilisation.
+🤖 2. find.py – Détection automatique (expérimental / non finalisé)
+
+Le script find.py est une fonctionnalité expérimentale, pas encore totalement fonctionnelle, dont le but est de :
+🔍 Détecter automatiquement une carte au trésor
+📸 À partir d’un screenshot in-game
+🧠 Comparer l’image avec la base de données de cartes
+📌 Fonctionnement prévu
+
+Faire un screenshot en jeu de la carte au trésor
+Placer l’image dans le dossier query
+Renommer l’image en treasure.png
+Lancer le script find.py
+
+➡️ Le résultat est généré dans le dossier out, avec :
+
+🗺️ la carte correspondante
+🌍 la région / zone associée
+
+⚠️ Cette partie est encore en cours de développement et peut donner des résultats incomplets ou imprécis.
+
+🎯 Objectif du projet
+
+Proposer un outil communautaire pratique pour :
+l’identification des cartes au trésor
+le confort de recherche
+le theorycraft autour de Dragon Quest IX
+Le projet évolue progressivement et reste ouvert aux améliorations.
 
 🛠️ Technologies utilisées
 
 Python
 Tkinter (interface graphique)
+Traitement d’images (basique / expérimental)
 Fonctionne hors ligne
-Aucune dépendance lourde
-
-📌 Notes
-
-Les images de cartes doivent être placées dans le dossier prévu à cet effet.
-Le projet est en évolution et reste open à l’amélioration.
 
 📜 Disclaimer
 
-Ce projet est un outil communautaire non officiel.
-Dragon Quest IX et ses assets appartiennent à Square Enix.
+Ce projet est un outil non officiel à but communautaire.
+Dragon Quest IX – Les Sentinelles du Firmament et tous les assets associés sont la propriété de Square Enix.
